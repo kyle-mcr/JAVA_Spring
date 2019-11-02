@@ -1,18 +1,40 @@
-
 public class Calculator {
-	private int OperandOne;
-	private int OperandTwo;
-	public static int total = 0;
-public Calculator(int OperandOneParam, int OperandTwoParam) {
-	OperandOne = OperandOneParam;
-	OperandTwo = OperandTwoParam;
+	private double operandOne;
+	private String operation;
+	private double operandTwo;
+	private double result;
 	
+	public Calculator() {
+		
+	}
+	public void setOperOne(double x) {
+		operandOne = x;
+	}
+	
+	public void setOperTwo(double x) {
+		operandTwo = x;
+	}
+	
+	public void setOper(String n) {
+		operation = n;
+	}
+	public void performOper(Calculator n) {
+		if(n.operation == "+") {
+			result = n.operandOne + n.operandTwo; 
+		}
+		if(n.operation == "-") {
+			result = n.operandOne - n.operandTwo; 
+		}
+		if(n.operation == "*") {
+			result = n.operandOne * n.operandTwo; 	
+		}
+		if(n.operation == "/") {
+			result = n.operandOne / n.operandTwo; 	
+		}
 
-}
-public void performOperation() {
-	total = OperandOne + OperandTwo;
-}
-public int getResults() {
-	return total;
-}
+	}
+	
+	public double getResult() {
+		return result;
+	}
 }
