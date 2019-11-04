@@ -7,7 +7,12 @@ public Calculator(int OperandOneParam, int OperandTwoParam) {
 	OperandOne = OperandOneParam;
 	OperandTwo = OperandTwoParam;
 	
-
+}
+public void setOperandOne(int OperandOne) {
+	this.OperandOne = OperandOne;
+}
+public void setOperandTwo(int OperandTwo) {
+	this.OperandTwo = OperandTwo;
 }
 public void performOperation() {
 	total = OperandOne + OperandTwo;

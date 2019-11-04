@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+* {
+ margin: -2px 0px 0px -4px;
+ padding: 0px;
+}
+.container{
+	background-color: white;
+    width: 970px;
+    height: 970px;
+    margin:50px;
+}
+.red{
+	color:red;
+	width:10%;
+	height: 10%;
+	display: inline-block;
+	background-color: red;
+	border:1px solid red;
+	vertical-align: top;	
+}
+
+.black{
+	color: black;
+	width:10%;
+	height: 10%;
+	display: inline-block;
+	background-color: black;
+	border:1px solid black;
+	vertical-align: top;
+}
+

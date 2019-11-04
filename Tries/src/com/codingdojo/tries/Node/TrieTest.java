@@ -13,7 +13,7 @@ public class TrieTest {
         
         System.out.println(trie.isPrefixValid("car"));
         System.out.println(trie.isWordValid("car"));
-    	Set<Character> keys = trie.root.children.get('*').children.keySet();
+    	Set<Character> keys = trie.root.children.get('c').children.keySet();
     	for(Character key: keys) {
     		System.out.println(key);
     	}
